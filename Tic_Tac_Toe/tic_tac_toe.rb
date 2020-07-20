@@ -14,5 +14,5 @@ loop do
   game.play
 
   puts "\nPlay again (Y/N)?"
-  gets.chomp.capitalize == 'Y' ? next : exit
+  exit unless gets.chomp.capitalize == 'Y'
 end

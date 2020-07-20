@@ -1,13 +1,13 @@
 class Player
   attr_accessor :name
-  attr_reader :symbol
+  attr_reader :sign
 
-  def initialize(name, symbol)
+  def initialize(name, sign)
     @name = name
-    @symbol = symbol
+    @sign = sign
   end
 
   def to_s
-    "Player name: #{@name} | Symbol: #{@symbol}"
+    "Player name: #{@name} | Sign: #{@sign}"
   end
 end
