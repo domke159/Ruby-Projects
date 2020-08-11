@@ -1,10 +1,7 @@
 def fibs(n)
-  i = 0
-  j = 1
-  while i <= n
-    puts i
-    i, j = j, i + j
-  end
+  n < 2 ? n : fibs(n - 1) + fibs(n - 2)
 end
 
-fibs(7)
+7.times do 
+  |i| puts(fibs(i)) 
+end
